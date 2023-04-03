@@ -10,6 +10,7 @@ def solution(p: float, x: np.array) -> tuple:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
+    alpha = 1 - p
     X_max = np.max(x)
     return X_max, (X_max - 0.062) / alpha ** (1/len(x)) + 0.062
  
